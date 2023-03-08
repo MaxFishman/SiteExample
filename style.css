@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+  margin: 3rem;
+  line-height: 1.5;
+  font-family: 'Muli', sans-serif;
+  color: rgba(5, 7, 9, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 20px;
+  padding: 70px;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes ani{
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+div {
+  width: 500px;
+  height: 200px;
+  background-color: red;
+  animation-name: ani;
+  animation-duration: 4s;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
